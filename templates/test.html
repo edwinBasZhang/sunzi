@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/index.css"/>
+    <script src="../static/jquery-2.1.4.min.js" rel="script"></script>
+    <link rel="stylesheet" href="../static/test.css" type="text/css">
+    <title>四种算法</title>
+</head>
+<body>
+<div class="page"><img src="../static/test.jpg"/></div>
+<div class="page1"><a class="title">App推荐系统</a></div>
+<div class="nav-bar">
+    <ul>
+        <li>
+            <i class="fa fa-paper-plane-o"></i>&nbsp Itemcf
+        </li>
+        <li>
+            <i class="fa fa-envira"></i>&nbsp Usercf
+        </li>
+        <li>
+            <i class="fa fa-free-code-camp"></i>&nbsp Apriori
+        </li>
+        <li>
+            <i class="fa fa-pied-piper"></i>&nbsp Fpgrowth
+        </li>
+    </ul>
+</div>
+<div class="content">
+    <div id="firstAlg" hidden>
+        <div class="name">
+            {% for i in range(1,length) %}
+                <span>{{ i }}</span>
+            {% endfor %}
+        </div>
+        <div class="name">
+            {% for item in itemcf %}
+                <span>{{ item["name"] }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    <div id="secondAlg" hidden>
+        <div class="name1">
+            {% for i in range(1,length_user) %}
+                <span>{{ i }}</span>
+            {% endfor %}
+        </div>
+        <div class="name1">
+            {% for item in usercf %}
+                <span>{{ item["name"] }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    <div id="thirdAlg" hidden>
+         <div class="name2">
+            {% for i in range(1,length_apr) %}
+                <span>{{ i }}</span>
+                <span>&nbsp</span>
+            {% endfor %}
+        </div>
+        <div class="name2">
+            {% for item in apriori %}
+                <span>{{ item["name"] }}</span>
+            {% endfor %}
+        </div>
+    </div>
+    <div id="fourthAlg" hidden>
+        <div class="name3">
+            {% for i in range(1,length_fp) %}
+                <span>{{ i }}</span>
+                <span>&nbsp</span>
+            {% endfor %}
+        </div>
+        <div class="name3">
+            {% for item in fpgrowth %}
+                <span>{{ item["name"] }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(".nav-bar li").click(function () {
+        $(this).siblings().removeAttr("class");
+        $(this).addClass("nav-bar-active");
+        var _index = $(this).index();
+        switch (_index) {
+            case 0: {
+                $("#firstAlg").show().siblings().hide();
+                $(".name").show();
+                $(".name1").hidden;
+                $(".name2").hidden;
+                break;
+            }
+            case 1: {
+                $("#secondAlg").show().siblings().hide();
+                $(".name1").show();
+                break;
+            }
+            case 2: {
+                $("#thirdAlg").show().siblings().hide();
+                $(".name2").show();
+                break;
+            }
+            case 3: {
+                $("#fourthAlg").show().siblings().hide();
+                $(".name3").show();
+                break;
+            }
+        }
+    });
+</script>
+</html>

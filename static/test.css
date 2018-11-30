@@ -1,0 +1,121 @@
+.page{
+    width:100%;
+    height:171px;
+}
+.page1{
+    width:100%;
+    height:103px;
+
+    background-image: url("../static/test.jpg");
+}
+.lan{
+    height:80px;
+    width:800px;
+    left:331px;
+    border:1px solid red;
+    position: relative;
+}
+
+.content{
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+#firstAlg{
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+
+}
+
+#secondAlg{
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+#thirdAlg{
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+#fourthAlg{
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+span{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+    height:60px;
+    display:block;
+    color:#4CAF50;
+    margin-left: 288px;
+    margin-top:8px;
+}
+
+.name{
+    float:left;
+    display: block;!important;
+}
+.name1{
+    float:left;
+    display: block;!important;
+}
+.name2{
+     float:left;
+     display: block;!important;
+}
+.name3{
+     float:left;
+     display: block;!important;
+}
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    display:block;
+    height:60px;
+    line-height: 88px;
+    font-family: 华文隶书;
+    margin-left: 504px;
+    text-decoration: none;
+    letter-spacing: 4px;
+
+}
+img{
+    width: 100%;
+    height:171px;
+}
+body{
+    background-color: #66CCFF;
+}
